@@ -9,7 +9,7 @@
 - Clone this repository
 
 ```bash
-git clone https://github.com/armandwipangestu/openai-project
+git clone https://github.com/harshitethic/Openai-clone/
 ```
 
 - Install dependency library
