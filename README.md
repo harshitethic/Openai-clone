@@ -3,12 +3,6 @@
 
 <img src="https://user-images.githubusercontent.com/64394320/210140604-04dd93f5-f9c5-4f1a-87b6-ccdc5b7c9002.png" alt="OpenAI Project">
 
-# Table of Contents
-
-- [Running on Localhost](https://github.com/armandwipangestu/openai-project#running-on-localhost)
-- [How to get API key?](https://github.com/armandwipangestu/openai-project#how-to-get-api-key)
-- [Information](https://github.com/armandwipangestu/openai-project#information)
-- [Demo](https://github.com/armandwipangestu/openai-project#demo)
 
 ## Running on Localhost
 
