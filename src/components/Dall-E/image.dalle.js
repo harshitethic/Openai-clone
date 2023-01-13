@@ -30,7 +30,7 @@ const Image = () => {
     window.document.body.scrollIntoView({ behavior: "smooth", block: "end" });
     const res = await openai.createImage({
       prompt: prompt,
-      n: 10,
+      n: 1,
       size: "1024x1024",
     });
     setLoading(false);
@@ -86,7 +86,7 @@ const Image = () => {
             |
 
           */}
-          <Information />
+         
 
           {/*
 
@@ -98,7 +98,7 @@ const Image = () => {
             
           */}
 
-          {/* {chatLog.map((d, i) => (
+          {chatLog.map((d, i) => (
             <>
               {d.user === "me" && (
                 <div
@@ -146,7 +146,7 @@ const Image = () => {
                 </div>
               )}
             </>
-          ))} */}
+          ))} 
           {loading && (
             <div className="relative">
               <div
@@ -183,7 +183,7 @@ const Image = () => {
                 // |
                 // |
                 //
-                // onClick={generateSurprise}
+                onClick={generateSurprise}
               >
                 Surprise me
               </button>
@@ -203,7 +203,7 @@ const Image = () => {
                 // |
                 // |
                 //
-                // onClick={generateImage}
+                onClick={generateImage}
               >
                 Generate
               </button>
@@ -211,8 +211,8 @@ const Image = () => {
             <TextareaAutosize
               className="w-full border-2 border-black rounded-md placeholder-gray-500 resize-none py-2 pl-3 pr-10 md:pl-5 outline-none"
               placeholder="Enter your message here"
-              style={{ boxShadow: "0.4rem 0.4rem 0 #222" }}
-              maxRows={5}
+              style={{ boxShadow: "0.8rem 0.8rem 0 #222" }}
+              maxRows={1}
               value={prompt}
               onChange={(e) => setPrompt(e.target.value)}
               //
@@ -222,8 +222,8 @@ const Image = () => {
               // |
               // |
               //
-              disabled
-              readOnly
+              //disabled
+              //readOnly
             />
           </div>
         )}
